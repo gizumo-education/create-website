@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+body {
+  font-family: Noto Sans JP;
+}
+
+a {
+  display: block;
+}
+
+.inner {
+  /* 共通用コンテンツ幅クラス作ったけどheader、footerにinnerなかった。。。 */
+  max-width: 1143px;
+  margin: 0 auto;
+}
+
+.shadow {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.font_color {
+  color: #03A9F4;
+}
+
+/* header */
+.header {
+  padding: 10px 0;
+  box-shadow: 0 0 8px 0;
+  z-index: 100;
+  position: sticky;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  height: 48px;
+  width: 48px;
+  border: none;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.header__menu:hover {
+  background-color: rgb(234, 235, 233);/* ボタン色不明のため、仮 */
+}
+
+.header__menu__line {
+  display: block;
+  background-color: #333;/* ボタン3本線の色不明のため、仮 */
+  height: 2px;
+  margin-top: 4px;
+}
+
+.header__menu__line:first-child {
+  margin-top: 0;
+}
+
+.header__logo {
+  width: 100px;
+  height: 33px;
+}
+
+.header__logo__img {
+  display: block;
+  width: 100%;
+}
+
+.header__search__btn {
+  background-color: #03a9f4;
+  width: 88px;
+  color: #fff;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* main */
+.main {
+  padding: 40px 0;
+}
+
+.main__article {
+  padding: 30px 0;
+  border-radius: 4px;
+}
+
+.main__title {
+  text-align: center;
+}
+.main__title__text {
+  font-weight: bold;
+  font-size: 32px;
+  padding: 0 8px 16px;
+  display: inline-block;
+  border-bottom: #03A9F4 solid 5px;
+}
+
+.main__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 80px;
+}
+
+.main__list__card {
+  border-radius: 4px;
+  padding: 30px 13px 80px;
+  width: 30%;
+  text-align: center;
+  min-height: 400px;
+}
+
+/* .main__list__card span::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: #03a9f4 solid 2px;
+  border-right: #03a9f4 solid 2px;
+  transform: translateY(-50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 0;
+} */
+
+.main__list__card img {
+  width: 120px;
+}
+
+.main__list__card h2 {
+  font-size: 21px;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.main__list__card p {
+  text-align: left;
+  margin-top: 40px;
+  font-size: 17px;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  background-color: #03a9f4;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px 0;
+}
