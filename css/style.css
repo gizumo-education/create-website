@@ -84,7 +84,7 @@ a {
 }
 
 /* main */
-.main {
+.section {
   padding: 40px 0;
 }
 
@@ -94,14 +94,12 @@ a {
 }
 
 .main__title {
-  text-align: center;
-}
-.main__title__text {
   font-weight: bold;
   font-size: 32px;
   padding: 0 8px 16px;
-  display: inline-block;
-  border-bottom: #03A9F4 solid 5px;
+  text-align: center;
+  /* display: inline-block; */
+  /* border-bottom: #03A9F4 solid 5px; */
 }
 
 .main__list {
